@@ -1,0 +1,5 @@
+#pragma once
+// Copy this file to client_id.h and paste the Client ID of your Spotify Dashboard app.
+// Without it, the Winamp prefs Client ID field stays empty (needed if you share
+// the plugin: each person uses their own app, max 5 users per app).
+#define SPOTIFY_CLIENT_ID_DEFAULT ""

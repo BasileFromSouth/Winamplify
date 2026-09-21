@@ -1,0 +1,24 @@
+#include <windows.h>
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+
+200 DIALOGEX 0, 0, 320, 226
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spotify Connect"
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "Client ID (Spotify Dashboard app):", -1, 8, 8, 300, 10
+  EDITTEXT 101, 8, 20, 304, 14, ES_AUTOHSCROLL
+  PUSHBUTTON "Sign in", 102, 8, 40, 90, 16
+  PUSHBUTTON "Sign out", 103, 104, 40, 90, 16
+  PUSHBUTTON "Refresh devices", 109, 200, 40, 112, 16
+  LTEXT "Status:", -1, 8, 62, 40, 10
+  LTEXT "", 104, 48, 62, 264, 20
+  LTEXT "Now playing:", -1, 8, 84, 70, 10
+  LTEXT "", 105, 8, 96, 304, 24
+  LTEXT "Connect device:", -1, 8, 124, 120, 10
+  COMBOBOX 106, 8, 136, 220, 80, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+  PUSHBUTTON "Transfer here", 107, 232, 136, 80, 14
+  AUTOCHECKBOX "Capture Winamp play/pause/next/volume for Spotify", 108, 8, 158, 304, 12
+  AUTOCHECKBOX "Winamp visualizations from Spotify (all audio outputs)", 110, 8, 174, 304, 12
+  DEFPUSHBUTTON "OK", 1, 230, 202, 82, 16
+END

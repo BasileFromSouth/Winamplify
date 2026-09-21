@@ -1,0 +1,13 @@
+/build/
+/dist/*
+!/dist/*.dll
+/out/
+/.vs/
+/CMakeSettings.json
+/plugin/common/client_id.h
+*.user
+*.suo
+*.sdf
+*.opensdf
+CMakeCache.txt
+CMakeFiles/
